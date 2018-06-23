@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>AdminProject</display-name>
+  <welcome-file-list>
+    <welcome-file>Login.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+    <servlet-name>AdminLogServlet</servlet-name>
+    <servlet-class>com.maveric.Servlet.AdminLogServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>   
+    <servlet-name>AdminLogServlet</servlet-name>
+    <url-pattern>/AdminLogServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>AdminRegServlet</servlet-name>
+    <servlet-class>com.maveric.Servlet.AdminRegServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AdminRegServlet</servlet-name>
+    <url-pattern>/AdminRegServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>AdminAddProd</servlet-name>
+    <servlet-class>com.maveric.Servlet.AdminAddProd</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AdminAddProd</servlet-name>
+    <url-pattern>/AdminAddProd</url-pattern>
+  </servlet-mapping>
+ 
+  <servlet>
+    <servlet-name>AdminViewProd</servlet-name>
+    <servlet-class>com.maveric.Servlet.AdminViewProd</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AdminViewProd</servlet-name>
+    <url-pattern>/AdminViewProd</url-pattern>
+  </servlet-mapping>
+  
+  
+</web-app>
